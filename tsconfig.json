@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
+    "baseUrl": "./api",
     "outDir": "build",
+    "typeRoots": ["node_modules/@types", "_types"],
     "module": "commonjs",
     "target": "esnext",
     "moduleResolution": "node",
@@ -14,7 +16,8 @@
     "noUnusedParameters": true,
     "removeComments": true,
     "preserveConstEnums": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
   },
-  "include": [".", "./_lib/_fonts"]
+  "include": ["api/**/*", "_types/**/*"],
+  "exclude": ["node_modules", ".serverless"]
 }

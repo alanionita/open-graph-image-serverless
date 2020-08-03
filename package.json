@@ -5,7 +5,7 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && cp -R ./api/_lib/_fonts/ ./build/_lib/_fonts",
     "deploy": "sls deploy"
   },
   "dependencies": {
