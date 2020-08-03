@@ -5,7 +5,7 @@
     "node": "12.x"
   },
   "scripts": {
-    "build": "tsc -p api/tsconfig.json && tsc -p web/tsconfig.json",
+    "build": "tsc -p tsconfig.json",
     "deploy": "sls deploy"
   },
   "dependencies": {
