@@ -1,10 +1,12 @@
 {
+  "name": "open-graph-service--portfolio",
   "private": true,
   "engines": {
     "node": "12.x"
   },
   "scripts": {
-    "build": "tsc -p api/tsconfig.json && tsc -p web/tsconfig.json"
+    "build": "tsc -p api/tsconfig.json && tsc -p web/tsconfig.json",
+    "deploy": "sls deploy"
   },
   "dependencies": {
     "chrome-aws-lambda": "2.1.1",
