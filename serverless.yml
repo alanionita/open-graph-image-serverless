@@ -7,8 +7,8 @@ provider:
   stage: ${opt:stage, 'dev'}
 
 functions:
-  add:
-    handler: api/index
+  get-og-image:
+    handler: build/handler.api
     events:
       - http:
           path: /
