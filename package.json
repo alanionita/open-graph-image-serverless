@@ -6,6 +6,7 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && cp -R ./api/_lib/_fonts/ ./build/_lib/_fonts",
+    "predeploy": "npm run build",
     "deploy": "sls deploy"
   },
   "dependencies": {
